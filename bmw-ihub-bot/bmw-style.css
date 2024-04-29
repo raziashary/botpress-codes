@@ -1,0 +1,388 @@
+@import url(https://db.onlinewebfonts.com/c/ac95f91c55cc591ecf37a4d136ff8031?family=BMWTypeNext+Pro+Regular);
+@font-face {
+  font-family: "BMWTypeNext Pro Regular";
+  src: url("https://db.onlinewebfonts.com/t/ac95f91c55cc591ecf37a4d136ff8031.eot");
+  src: url("https://db.onlinewebfonts.com/t/ac95f91c55cc591ecf37a4d136ff8031.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/ac95f91c55cc591ecf37a4d136ff8031.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/ac95f91c55cc591ecf37a4d136ff8031.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/ac95f91c55cc591ecf37a4d136ff8031.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/ac95f91c55cc591ecf37a4d136ff8031.svg#BMWTypeNext Pro Regular")format("svg");
+}
+/* This CSS rule sets the default font size of the entire document */
+html {
+  font-size: 16px;
+}
+body{
+  font-family: "BMWTypeNext Pro Regular", sans-serif;
+}
+/* These CSS rules sets the text direction of the paragraph (RTL or LTR) */
+p,
+.bpw-from-bot > div,
+#input-message {
+  direction: ltr;
+}
+
+/* This rule changes the color of the text in the input message */
+#input-message {
+  color: #000;
+}
+
+/* Changes the color of the new message indicator */
+.bpw-new-messages-indicator {
+  background-color: #1c69d4;
+  color: #ffffff;
+  z-index: 1;
+  position: relative;
+}
+.bpw-card-subtitle {
+    font-size: 11px;
+}
+.bpw-card-title {
+    max-height: 60px;
+}
+.bpw-card-buttons a{
+    color: #1c69d4;
+}
+#btn-close:before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' width='200' height='200' viewBox='0,0,256,256'%3E%3Cg fill='%231c69d4' fill-rule='nonzero' stroke='none' stroke-width='1' stroke-linecap='butt' stroke-linejoin='miter' stroke-miterlimit='10' stroke-dasharray='' stroke-dashoffset='0' font-family='none' font-weight='none' font-size='none' text-anchor='none' style='mix-blend-mode: normal'%3E%3Cg transform='scale(5.12,5.12)'%3E%3Cpath d='M25,2c-12.681,0 -23,10.319 -23,23c0,12.681 10.319,23 23,23c12.681,0 23,-10.319 23,-23c0,-12.681 -10.319,-23 -23,-23zM33.71,32.29c0.39,0.39 0.39,1.03 0,1.42c-0.2,0.19 -0.45,0.29 -0.71,0.29c-0.26,0 -0.51,-0.1 -0.71,-0.29l-7.29,-7.29l-7.29,7.29c-0.2,0.19 -0.45,0.29 -0.71,0.29c-0.26,0 -0.51,-0.1 -0.71,-0.29c-0.39,-0.39 -0.39,-1.03 0,-1.42l7.29,-7.29l-7.29,-7.29c-0.39,-0.39 -0.39,-1.03 0,-1.42c0.39,-0.39 1.03,-0.39 1.42,0l7.29,7.29l7.29,-7.29c0.39,-0.39 1.03,-0.39 1.42,0c0.39,0.39 0.39,1.03 0,1.42l-7.29,7.29z'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-color: transparent;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+}
+
+#btn-close {
+  top:52vh;
+  left:1vh;
+  animation: none;
+  transition: none;
+}
+
+/* Styling for the chat header container */
+.bpw-header-container {
+  background: #FFFFFF !important;
+  position: relative;
+  overflow: visible;
+}
+
+/* Styling for the typing bubble */
+.bpw-typing-bubble {
+  background: #1c69d4;
+}
+
+/* Styling for the chat bubble content */
+.bpw-chat-bubble-content {
+  background-color: #1c69d4;
+  border-radius: 12px;
+  border: 1px solid #1c69d4;
+}
+.bpw-date-container{
+  color: #FFFFFF;
+  display: none;
+}
+.bpw-message-big-container {
+  align-items: flex-start;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* Styling for the date container, header name, and header subtitle */
+
+.bpw-header-name{
+  font-weight: 900;
+  color: #000000;
+  padding-bottom: 4px;
+  font-size: 0.8rem;
+}
+
+.bpw-header-subtitle{
+  font-weight: 800;
+  color: #6f6f6f;
+  font-size: 0.65rem;
+}
+
+/* Styling for the layout of the chat bubble. Width, height, border, position and radius of the chat bubble */
+.bpw-layout {
+  width: 260px !important;
+  height: 52vh;
+  border-radius: 10px !important;
+  right:6%;
+  bottom: 12%;
+}
+/* Responsive design rules for devices with width less than or equal to 767px */
+@media screen and (max-device-width: 767px) {
+  .bpw-layout {
+    width: 100% !important;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    border-radius: 0;
+  }
+  #btn-close:before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='%23808080' class='w-6 h-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M6 18 18 6M6 6l12 12'/%3E%3C/svg%3E");
+    background-color: transparent;
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+}
+
+    #btn-close {
+      top: 0;
+      left: 0;
+      animation: none;
+      transition: none;
+    }
+  
+}
+
+/* Changes the fill color of the header icons to white */
+.bpw-header-icon,
+.bpw-header-icon svg,
+.bpw-header-icon svg path {
+  fill: #ffffff !important;
+  background-image: url('https://gdurl.com/Pff1')format('svg');
+  background-color: #ffffff;
+}
+.bpw-header-icon:hover:after{
+    background-color: color-mix(in srgb, var(--header-icon-color) 0%, transparent);
+}
+
+/* Changes the color of the placeholder text in the input message */
+#input-message::placeholder {
+  color: #6f6f6f;
+  content: "Chat With BMW I Corner" !important;
+  align-items: center;
+}
+
+
+/* Styling for the keyboard single choice option */
+.bpw-keyboard-single-choice {
+  background-color: #FFFFFF;
+  border: none;
+}
+
+/* Styling for the buttons in the chat interface */
+.bpw-button,
+.bpw-button-alt {
+  background-color: #1c69d4;
+  color: #ffffff;
+  border-radius: 40px;
+  border: none;
+}
+
+
+/* Styling for hover effect on the buttons in the chat interface */
+.bpw-button:hover,
+.bpw-button-alt:hover {
+  background-color: #1D5D9B;
+  color: #F0F0F0 ;
+}
+
+/* Styling for hyperlinks in the chat interface */
+a {
+  color: #F0F0F0;
+  text-decoration: underline;
+}
+.bpw-from-bot .bpw-chat-bubble .bpw-chat-bubble-content a:link{
+  color: #1c69d4;
+    
+}
+
+/* Styling for the chat container, including color, scrollbar width and color, and border */
+.bpw-chat-container {
+  background-color: #F5F5F5;
+  scrollbar-width: thin;
+  scrollbar-color:#F0F0F0;
+  overflow: visible;
+}
+
+/* Styling for the chat bubble content when it's from the bot */
+.bpw-from-bot .bpw-chat-bubble .bpw-chat-bubble-content {
+  background-color: #FFFFFF;
+  color: #666666;
+  margin-right: 0;
+  font-size: 12px;
+}
+
+.bpw-from-bot .bpw-bot-avatar img{
+  display:none !important;
+  height: 0 !important;
+  width: 0 !important;
+}
+
+.bpw-from-bot .bpw-bot-avatar{
+    height: 0;
+    width:0;
+}
+/* Styling for the chat bubble content when it's from the user */
+.bpw-from-user .bpw-chat-bubble .bpw-chat-bubble-content {
+  background-color: #1c69d4;
+  color: #FFFFFF;
+  font-size:12px;
+}
+
+/* Styling for the composer section of the chat interface */
+.bpw-composer {
+  background-color: #FFFFFF;
+  padding: 0;
+}
+/* Style for the composer section */
+.bpw-composer-inner{
+    padding: 0;
+}
+ 
+
+/* Styling for the scrollbar in the chat container */
+.bpw-chat-container::-webkit-scrollbar,
+.bpw-chat-container::-moz-scrollbar {
+  width: 10px;
+  background-color: #8b8b8b;
+  border: none;
+}
+
+.bpw-composer textarea::-webkit-scrollbar,
+.bpw-composer textarea::-moz-scrollbar {
+    background-color: #000;
+}
+
+.bpw-bot-avatar{
+  background: #ffffff;
+}
+
+/* Styling for the avatar of the bot */
+.bpw-bot-avatar img,
+.bpw-bot-avatar svg {
+  background: #ffffff;
+  display: block; 
+  margin-right: 4px;
+  border: 2px solid #ffffff;
+  border-radius: 0;
+  width: 40px;
+  height: 40px;
+}
+
+/* Styling for the general scrollbar in the web page */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+/* Styling for the track of the general scrollbar and the chat container scrollbar */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.bpw-chat-container::-webkit-scrollbar-track,
+.bpw-chat-container::-moz-scrollbar-track {
+  background-color: #000 !important;
+}
+/* Styling for the thumb of the general scrollbar and the chat container scrollbar */
+::-webkit-scrollbar-thumb,
+.bpw-chat-container::-webkit-scrollbar-thumb,
+.bpw-chat-container::-moz-scrollbar-thumb {
+  background-color: #1c69d4;
+  border-radius: 1rem;
+  border: 0.5rem solid transparent;
+}
+
+/* Styling for the floating button icon in the chat interface */
+
+.bpw-message-group> :not(:last-child):not(.hidden) {
+  margin-bottom: 10px;
+}
+
+/* Styling for the floating button in the chat interface */
+  .bpw-widget-btn{
+    border-radius: 50%;
+    background:none;
+    background-color: transparent;
+    }
+    
+  .bpw-floating-button::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='512' height='512' viewBox='0 0 512 512' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M286.333 92L129.234 361.313H4L140.316 127.636C153.19 105.575 176.81 92.0088 202.348 92.0088H273.313L286.333 92Z' fill='%232867AB'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M127.508 361.313L284.606 92H509.035L372.719 325.686C359.854 347.747 336.234 361.313 310.687 361.313H310.681L127.508 424L163.396 361.313H127.508Z' fill='%23D6D6D6'/%3E%3Cpath d='M154.855 250.58C168.087 250.58 178.813 239.854 178.813 226.623C178.813 213.392 168.087 202.666 154.855 202.666C141.624 202.666 130.898 213.392 130.898 226.623C130.898 239.854 141.624 250.58 154.855 250.58Z' fill='white'%3E%3Canimate attributeName='opacity' values='1;0.25;1;1' keyTimes='0;0.25;0.5;1' dur='4s' begin='0s' repeatCount='indefinite' /%3E%3C/path%3E%3Cpath d='M254.849 250.58C268.08 250.58 278.806 239.854 278.806 226.623C278.806 213.392 268.08 202.666 254.849 202.666C241.618 202.666 230.892 213.392 230.892 226.623C230.892 239.854 241.618 250.58 254.849 250.58Z' fill='white'%3E%3Canimate attributeName='opacity' values='1;0.25;1;1' keyTimes='0;0.25;0.5;1' dur='4s' begin='1s' repeatCount='indefinite' /%3E%3C/path%3E%3Cpath d='M354.842 250.58C368.073 250.58 378.799 239.854 378.799 226.623C378.799 213.392 368.073 202.666 354.842 202.666C341.611 202.666 330.885 213.392 330.885 226.623C330.885 239.854 341.611 250.58 354.842 250.58Z' fill='white'%3E%3Canimate attributeName='opacity' values='1;0.25;1;1' keyTimes='0;0.25;0.5;1' dur='4s' begin='2s' repeatCount='indefinite' /%3E%3C/path%3E%3C/svg%3E%0A");
+    border-radius: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height:62px !important;
+    width:62px !important;
+    }
+    .bpw-floating-button{
+        box-shadow: none;
+    }
+    .bpw-floating-button:hover{
+        filter:none;
+    }
+  .bpw-widget-btn:focus,
+  .bpw-widget-btn:hover {
+    background-color: inherit;
+  }
+
+
+/* Styling for the 'powered by' section of the chat interface */
+.bpw-powered {
+  text-align: center;
+  padding: 10px;
+  color: #000000;
+  background: #1c69d4;
+  font-size: 16px;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+/* Styling for the hyperlinks in the 'powered by' section of the chat interface */
+.bpw-powered a {
+  color: #000000;
+  text-decoration: none;
+  display: none;
+}
+
+/* Styling for hover effect on the hyperlinks in the 'powered by' section of the chat interface */
+.bpw-powered a:hover {
+  text-decoration: underline;
+}
+
+
+/* Styling for the send button when it's disabled */
+.bpw-send-button:disabled,
+.bpw-send-button:disabled:hover {
+  opacity: 1;
+  background-color: #1c69d4;
+  cursor: default;
+}
+
+/* Styling for the send buttons */
+.bpw-send-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Styling for the individual send button */
+.bpw-send-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: #1c69d4;
+  padding: 18px;
+  width: 24px;
+  height: 24px;
+  right: 10px;
+  color: transparent;
+  cursor: pointer;
+  background-image: url('data:image/svg+xml,%3Csvg%20width%3D%2217%22%20height%3D%2220%22%20viewBox%3D%220%200%2017%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M1.77152%201.04207L15.5347%209.13807C16.192%209.52472%2016.192%2010.4753%2015.5347%2010.8619L8.5%2015L1.70485%2018.9971C0.998111%2019.4129%200.118918%2018.8481%200.203121%2018.0325L0.811331%2012.1412C0.85993%2011.6705%201.23186%2011.2983%201.70256%2011.2493L8.21533%2010.5717C9.32302%2010.4565%209.44138%208.88961%208.36357%208.60928L1.54478%206.83574C1.15164%206.73349%200.859426%206.40357%200.805392%206.00096L0.27339%202.03702C0.162447%201.21039%201.05263%200.619195%201.77152%201.04207Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A') !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  transition: background-color 0.2s;
+}
+
+.bpw-send-button:not(:disabled):hover {
+  background-color: #1c69d4;
+}
+
+.bpw-composer textarea {
+  height: 45px;
+  font-size: 12px;
+  font-weight: normal;
+  border:0;
+  line-height: 2.5;
+}
